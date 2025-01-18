@@ -17,9 +17,9 @@ import sys
 import os
 
 # Add the parent directory to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Utils.mail import *
+# from Utils.mail import *
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Utils.project_details_footer import *
@@ -40,7 +40,7 @@ def main():
     footer_container = st.container()
 
     # Sidebar navigation
-    menu = ["Home", "EDA", "Burnout Prediction", "Model Evaluation", "Report Issue"]
+    menu = ["Home", "EDA", "Burnout Prediction", "Model Evaluation"] # , "Report Issue"]
     choice = st.sidebar.selectbox("Navigation", menu)
 
     if choice == "Home":
@@ -227,24 +227,24 @@ def main():
                     st.pyplot(plt)
                     pass
 
-    elif choice == "Report Issue":
-        st.subheader("Report an Issue")
-        st.write("If you encounter any issues with the dashboard, please let us know below.")
+    # elif choice == "Report Issue":
+    #     st.subheader("Report an Issue")
+    #     st.write("If you encounter any issues with the dashboard, please let us know below.")
 
-        # Input fields for issue reporting
-        name = st.text_input("Your Name")
-        email = st.text_input("Your Email")
-        description = st.text_area("Describe the Issue")
+    #     # Input fields for issue reporting
+    #     name = st.text_input("Your Name")
+    #     email = st.text_input("Your Email")
+    #     description = st.text_area("Describe the Issue")
 
-        if st.button("Submit Issue"):
-            if name and email and description:
-                sent = send_issue_report(name, email, description)
-                if sent:
-                    st.success("Thank you for reporting the issue. We will get back to you shortly.")
-                else:
-                    st.error("Failed to send the issue report. Please try again later.")
-            else:
-                st.error("Please fill out all the fields before submitting.")
+    #     if st.button("Submit Issue"):
+    #         if name and email and description:
+    #             sent = send_issue_report(name, email, description)
+    #             if sent:
+    #                 st.success("Thank you for reporting the issue. We will get back to you shortly.")
+    #             else:
+    #                 st.error("Failed to send the issue report. Please try again later.")
+    #         else:
+    #             st.error("Please fill out all the fields before submitting.")
 
     # Add the project footer at the bottom
     add_project_footer()
