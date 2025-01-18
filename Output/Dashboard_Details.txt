@@ -1,0 +1,25 @@
+App: Employee Burnout Analysis & Prediction Dashboard
+Author: Pardha Saradhi Alapati
+Project_ID: EMP-BURN-EMP-BURN-33FE95CE
+Version: 1.0.0
+Created_Date: January 18, 2025
+Features: [
+  "Exploratory Data Analysis",
+  "Burnout Prediction",
+  "Model Evaluation",
+  "Issue Reporting"
+]
+Technologies: [
+  "Python",
+  "Streamlit",
+  "Scikit-learn",
+  "Pandas",
+  "Machine Learning"
+]
+Copyright_Notice: {
+  Year: 2025,
+  Holder: Pardha Saradhi Alapati,
+  Statement: This software is the intellectual property of Pardha Saradhi Alapati.
+             All rights reserved © 2025 Pardha Saradhi Alapati.
+             This work is protected by copyright laws and international treaties. Unauthorized reproduction, distribution, or modification of this software, in whole or in part, is strictly prohibited and may result in legal action.
+}
