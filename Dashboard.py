@@ -51,7 +51,7 @@ def main():
         st.subheader("Exploratory Data Analysis")
         uploaded_file = st.file_uploader("Upload Dataset", type=['csv'])
         if uploaded_file is not None:
-            df = pd.read_csv(uploaded_file)
+            df = pd.read_csv(uploaded_file, encoding="utf-8")
             st.write("### Dataset Preview")
             st.dataframe(df.head())
             st.write("### Data Summary")
