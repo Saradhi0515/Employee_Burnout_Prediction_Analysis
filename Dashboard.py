@@ -22,11 +22,11 @@ import os
 # from Utils.mail import *
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from Utils.project_details_footer import *
+from project_details_footer import *
 
 def main():
     # Load pre-trained model (replace with your actual model path)
-    MODEL_PATH = 'X:\\Employee_Burnout_Prediction_Analysis\\Model\\model.pkl'
+    MODEL_PATH = "model.pkl"
     with open(MODEL_PATH, 'rb') as file:
         model = pickle.load(file)
     

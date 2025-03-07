@@ -2,3 +2,7 @@
 /Model/model.pkl
 /.venv
 /Output/Dashboard_Output.mp4
+/__pycache__
+/Output
+/model.pkl
+/.venv

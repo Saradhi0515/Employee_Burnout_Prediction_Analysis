@@ -12,5 +12,5 @@ model = RandomForestClassifier()
 model.fit(X, y)
 
 # Save the model to a file
-with open('X:\Employee_Burnout_Prediction_Analysis\Model\model.pkl', 'wb') as file:
+with open('X:\Employee_Burnout_Prediction_Analysis\Employee_Burnout_Prediction_Analysis\model.pkl', 'wb') as file:
     pickle.dump(model, file)
