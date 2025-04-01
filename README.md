@@ -128,6 +128,10 @@ Low Risk: 0.30, High Risk: 0.70
 - Upload Your Dataset In csv File Format
 - Select The Model (Classification or Regression)
 
+##### 📱 My App Link
+
+- [Employee-Burnout](https://employee-burnout.streamlit.app/)
+
 ##### 📩 Report Issue
 
 - If You Encounter An Issue, You Can Submit It Directly To The Mentioned Email In The Dashboard.py
